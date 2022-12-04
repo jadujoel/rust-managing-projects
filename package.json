@@ -1,0 +1,35 @@
+{
+  "name": "rust-managing-projects",
+  "version": "0.0.1",
+  "description": "Manage rust projects course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf target",
+    "build": "cargo build --release",
+    "chmod": "(cd target/release && ls && chmod +x rust-managing-projects second_binary third_binary)",
+    "exe": "bun run build && (cd target/release && ./rust-managing-projects && ./second_binary && ./third_binary)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jadujoel/rust-managing-projects.git"
+  },
+  "keywords": [],
+  "author": "Joel Lof <jlof@evolution.com> (https://joellof.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jadujoel/rust-managing-projects/issues"
+  },
+  "homepage": "https://github.com/jadujoel/rust-managing-projects#readme",
+  "dependencies": {
+    "commitizen": "^4.2.5"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

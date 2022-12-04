@@ -1,0 +1,9 @@
+[package]
+name = "shapes"
+version = "0.1.0"
+edition = "2021"
+repository = "git+https://github.com/jadujoel/rust-managing-projects.git"
+description = "Managing projects with Rust"
+
+[dependencies]
+rand = "0.8.4"

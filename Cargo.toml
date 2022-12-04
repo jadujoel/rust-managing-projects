@@ -1,0 +1,14 @@
+[package]
+name = "rust-managing-projects"
+version = "0.1.0"
+edition = "2021"
+repository = "git+https://github.com/jadujoel/rust-managing-projects.git"
+description = "Managing projects with Rust"
+
+[dependencies]
+
+[workspace]
+members = [
+    "packages/shapes",
+    "packages/inline_modules"
+]
