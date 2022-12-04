@@ -8,7 +8,8 @@
     "clean": "rm -rf target",
     "build": "cargo build --release",
     "chmod": "(cd target/release && ls && chmod +x rust-managing-projects second_binary third_binary)",
-    "exe": "bun run build && (cd target/release && ./rust-managing-projects && ./second_binary && ./third_binary)"
+    "exe": "bun run build && (cd target/release && ./rust-managing-projects && ./second_binary && ./third_binary)",
+    "lint": "cargo clippy --fix"
   },
   "repository": {
     "type": "git",

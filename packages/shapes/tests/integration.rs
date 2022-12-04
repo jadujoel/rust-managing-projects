@@ -4,13 +4,12 @@ use shapes::*;
 fn generate_two_random_numbers() -> (f64, f64) {
     let width = generate_random_number();
     let height = generate_random_number();
-    return (width, height);
+    (width, height)
 }
 
 fn generate_random_number() -> f64 {
     let mut rng = rand::thread_rng();
-    let num = rng.gen_range(0.0..100.0);
-    return num;
+    rng.gen_range(0.0..100.0)
 }
 
 #[test]

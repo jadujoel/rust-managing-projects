@@ -1,7 +1,7 @@
 use std::fmt;
 
 // derive equality for features
-#[derive(Clone, Debug, PartialEq)]
+#[derive(Clone, Debug, PartialEq, Eq)]
 pub enum Feature {
     Area,
     Perimeter,
